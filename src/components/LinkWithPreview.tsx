@@ -3,6 +3,7 @@ import { get } from '../framework/pages';
 import { Box, Paper, Popper } from '@mui/material';
 import { useMemo, useState } from 'react';
 import { atom, useAtom } from 'jotai';
+import { useEffect } from 'react';
 
 const isOpenAtom = atom(false);
 
@@ -27,6 +28,8 @@ export const LinkWithPreview: React.FC<Props> = ({ path, ...props }) => {
     setIsOpen(false);
     setAnchorEl(null);
   };
+
+  useEffect(() => () => handleClose());
 
   return (
     <Box
