@@ -31,6 +31,8 @@ const router = createBrowserRouter(pages.map(page => ({
   path: page.path,
   loader: page.loader,
   element: <ComponentWrapper page={page} />,
-})));
+})), {
+  basename: '/website'
+});
 
 export const Router = () => <RouterProvider router={router} />;

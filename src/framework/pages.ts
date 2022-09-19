@@ -1,5 +1,4 @@
 import type { LoaderFunction } from 'react-router-dom';
-import type { Layout } from '../layouts/LayoutProps';
 
 interface Module {
     default: React.FC;
