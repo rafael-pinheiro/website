@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { MDXProvider as Provider } from '@mdx-js/react';
 import type React from 'react';
 import { LinkWithPreview } from '../components/LinkWithPreview';
